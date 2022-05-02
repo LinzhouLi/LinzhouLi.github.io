@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Li Linzhou</title>
+    <link>https://linzhouli.github.io/post/</link>
+    <description>Recent content in Posts on Li Linzhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © Linzhou Li. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 May 2022 11:10:56 +0800</lastBuildDate><atom:link href="https://linzhouli.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://linzhouli.github.io/post/test/</link>
+      <pubDate>Mon, 02 May 2022 11:10:56 +0800</pubDate>
+      
+      <guid>https://linzhouli.github.io/post/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

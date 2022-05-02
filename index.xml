@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Li Linzhou</title>
+    <link>https://linzhouli.github.io/</link>
+    <description>Recent content on Li Linzhou</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>Copyright © Linzhou Li. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 02 May 2022 11:10:56 +0800</lastBuildDate><atom:link href="https://linzhouli.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://linzhouli.github.io/post/test/</link>
+      <pubDate>Mon, 02 May 2022 11:10:56 +0800</pubDate>
+      
+      <guid>https://linzhouli.github.io/post/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Readme</title>
+      <link>https://linzhouli.github.io/readme/</link>
+      <pubDate>Sun, 01 May 2022 22:40:34 +0800</pubDate>
+      
+      <guid>https://linzhouli.github.io/readme/</guid>
+      <description>Li Linzhou 基本信息 2019级同济大学软件学院本科生
+正在学习：计算机图形学，web3D
+E-mail：LinzhouLi@outlook.com
+Github：LinzhouLi(github.com)
+教育经历  2019.9 ~ 至今：同济大学，本科，软件工程专业 2016.6 ~ 2019.6：西北工业大学附属中学，高中  项目经历  2021.11 ~ 至今：同济大学软件学院图形图像实验室，大规模多样化人群渲染 2021.7 ~ 2021.9：实习，Invix创乐(上海)信息科技有限公司，前端开发  </description>
+    </item>
+    
+  </channel>
+</rss>
