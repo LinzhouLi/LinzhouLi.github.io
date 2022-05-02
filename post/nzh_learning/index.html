@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='https://linzhouli.github.io/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/frameworks.min.css' />
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/github.min.css' />
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/github-style.css' />
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/light.css' />
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/dark.css' />
+    <link rel="stylesheet" href='https://linzhouli.github.io/css/syntax.css' />
+    <title>学习笔记 - Li Linzhou</title>
+    
+    <link rel="icon" type="image/x-icon" href='/images/avatar.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="nzh的Java学习笔记" />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://linzhouli.github.io/post/nzh_learning/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="学习笔记 - Li Linzhou" />
+<meta name="twitter:description"
+  content="nzh的Java学习笔记" />
+<meta name="twitter:site" content="https://linzhouli.github.io/" />
+<meta name="twitter:creator" content="" />
+<meta name="twitter:image"
+  content="https://linzhouli.github.io/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="学习笔记 - Li Linzhou">
+<meta property="og:description"
+  content="nzh的Java学习笔记" />
+<meta property="og:url" content="https://linzhouli.github.io/post/nzh_learning/" />
+<meta property="og:site_name" content="学习笔记" />
+<meta property="og:image"
+  content="https://linzhouli.github.io/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2022-05-02 13:43:30 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="https://linzhouli.github.io/">
+        
+        <img class="rounded-1 avatar-user" height="32" width="32" src="https://linzhouli.github.io/images/avatar2.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24">
+          <path fill-rule="evenodd"
+            d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:https://linzhouli.github.io/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="https://linzhouli.github.io/">
+        <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+          width="32">
+          <path fill-rule="evenodd"
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="https://linzhouli.github.io/">
+                  <img class=" avatar-user"
+                    src="https://linzhouli.github.io/images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="https://linzhouli.github.io/">李林洲</a></span><span
+                    class="path-divider">/</span><strong class="css-truncate-target mr-1" style="max-width: 410px"><a
+                      href="https://linzhouli.github.io/post/nzh_learning/">学习笔记</a></strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Mon, 02 May 2022 13:43:30 &#43;0800"
+                    class="no-wrap">
+                    Mon, 02 May 2022 13:43:30 &#43;0800</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Mon, 02 May 2022 18:18:25 &#43;0800"
+                    class="no-wrap">
+                    Mon, 02 May 2022 18:18:25 &#43;0800</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      5033 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><h1 id="java与线程">Java与线程</h1>
+<p>摘录自《深入理解Java虚拟机》一书第十二章</p>
+<h1 id="一线程的实现">一、线程的实现</h1>
+<p>实现线程主要有三种方式:</p>
+<ol>
+<li>使用内核线程实现（1:1实现)</li>
+<li>使用用户线程实现(1:N实现)</li>
+<li>使用用户线程加轻量级进程混合实现(N:M实现）</li>
+</ol>
+<hr>
+<h2 id="11-内核线程实现">1.1 内核线程实现</h2>
+<p>  使用内核线程实现的方式也被称为1:1实现。<strong>内核线程</strong>(Kernel-Level Thread，<strong>KLT</strong>)就是直接由<strong>操作系统内核</strong>（Kernel，下称内核）支持的线程，这种线程由内核来完成线程切换，内核通过操纵调度器（Scheduler）对线程进行调度，并负责将线程的任务映射到各个处理器上。每个内核线程可以视为内核的一个分身，这样操作系统就有能力同时处理多件事情，支持多线程的内核就称为多线程内核(Multi-Threads Kernel) 。
+程序一般不会直接使用内核线程，而是使用内核线程的一种高级接口——<strong>轻量级进程</strong>（LightWeight Process，<strong>LWP</strong>)，轻量级进程就是我们通常意义上所讲的线程，由于每个轻量级进程都由一个内核线程支持，因此只有先支持内核线程，才能有轻量级进程。这种轻量级进程与内核线程之间<strong>1: 1</strong>的关系称为一对一的线程模型，如图12-3所示。</p>
+<p><img src="https://img-blog.csdnimg.cn/f9a81093a25844da90ad5f96e3fc0b86.png" alt="在这里插入图片描述"></p>
+<p>轻量级线程的优点：</p>
+<blockquote>
+<p>由于内核线程的支持，每个轻量级线程都是一个独立的调度单元，即使被阻塞也不会影响整个进程的工作</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<ul>
+<li>基于内核线程实现，因此各种线程操作需要进行系统调用，在用户态和内核态间来回切换，代价较高</li>
+<li>消耗内核资源（如内核线程的栈空间）</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="12-内核线程实现">1.2 内核线程实现</h2>
+<p>  而狭义上的用户线程（User Thread，UT）指的是完全建立在用户空间的线程库上，系统内核不能感知到用户线程的存在及如何实现的。用户线程的建立、同步、销毁和调度完全在<strong>用户态</strong>中完成，不需要内核的帮助。如果程序实现得当，这种线程不需要切换到内核态，因此操作可以是非常快速且低消耗的，也能够支持规模更大的线程数量，部分高性能数据库中的多线程就是由用户线程实现的。这种进程与用户线程之间<strong>1:N</strong>的关系称为一对多的线程模型，如图12-4所示。</p>
+<p><img src="https://img-blog.csdnimg.cn/b586ca222559467399007e27a46277ad.png" alt="在这里插入图片描述"></p>
+<p>优点：</p>
+<blockquote>
+<p>不需要系统内核的支援，速度更快</p>
+</blockquote>
+<p>缺点：</p>
+<blockquote>
+<p>没有系统内核的支援，所有的线程操作都需要由用户程序自己去处理，难以处理一些相对复杂的问题，如阻塞处理、线程映射等等</p>
+</blockquote>
+<hr>
+<h2 id="13-混合实现">1.3 混合实现</h2>
+<p>  线程除了依赖内核线程实现和完全由用户程序自己实现之外，还有一种将内核线程与用户线程一起使用的实现方式，被称为<strong>N:M</strong>实现。在这种混合实现下，既存在用户线程，也存在轻量级进程。<strong>用户线程还是完全建立在用户空间中</strong>，因此用户线程的创建、切换、析构等操作依然廉价，并且可以支持大规模的用户线程并发。而操作系统支持的轻量级进程则作为用户线程和内核线程之间的桥梁，这样可以<strong>使用内核提供的线程调度功能及处理器映射</strong>，并且用户线程的系统调用要通过轻量级进程来完成，这大大降低了整个进程被完全阻塞的风险。在这种混合模式中，用户线程与轻量级进程的数量比是不定的，是<strong>N:M</strong>的关系，如图12-5所示，这种就是多对多的线程模型。</p>
+<h2 id="14-java线程的实现">1.4 Java线程的实现</h2>
+<p>  但从JDK 1.3起，“主流”平台上的“主流”商用Java虚拟机的线程模型普遍都被替换为基于操作系统<strong>原生线程模型</strong>来实现，即采用1:1的线程模型。
+  以HotSpot为例，它的每一个Java线程都是直接映射到一个操作系统原生线程来实现的，而且中间没有额外的间接结构，所以HotSpot自己是不会去干涉线程调度的（可以设置线程优先级给操作系统提供调度建议），全权交给底下的操作系统去处理，所以何时冻结或唤醒线程、该给线程分配多少处理器执行时间、该把线程安排给哪个处理器核心去执行等，都是由操作系统完成的，也都是由操作系统全权决定的。</p>
+<h1 id="二java线程调度">二、Java线程调度</h1>
+<p>线程调度是指系统为线程分配处理器使用权的过程，调度主要方式有两种，分别是<strong>协同式</strong>(Cooperative Threads-Scheduling〉线程调度和<strong>抢占式</strong>(Preemptive Threads-Scheduling)线程调度。</p>
+<p><strong>协同式调度</strong>：</p>
+<blockquote>
+<ul>
+<li>线程执行时间由线程本身控制。线程执行完后，主动通知系统切换到另一线程上去</li>
+<li>实现简单，由线程自己控制切换，易于实现线程同步</li>
+<li>线程执行时间不可控，线程若长期占有处理器，容易造成阻塞</li>
+</ul>
+</blockquote>
+<p><strong>抢占式调度</strong></p>
+<blockquote>
+<ul>
+<li>线程由系统来分配执行时间 ，线程的切换不由线程本身决定</li>
+<li>Java使用的就是抢占式调度方式</li>
+</ul>
+</blockquote>
+<p>虽然说Java线程调度是系统自动完成的，但是我们仍然可以“建议”操作系统给某些线程多分配一点执行时间，另外的一些线程则可以少分配一点——这项操作是通过设置线程优先级来完成的。Java语言一共设置了10个级别的线程优先级（Thread.MIN_PRIORITY至Thread.MAX_PRIORITY)。在两个线程同时处于Ready状态时，优先级越高的线程越容易被系统选择执行。</p>
+<p><img src="https://img-blog.csdnimg.cn/bdd050c579c444c49e2bc5477633f245.png" alt="在这里插入图片描述"></p>
+<h1 id="三状态转换">三、状态转换</h1>
+<p>  Java语言定义了6种线程状态，在任意一个时间点中，一个线程只能有且只有其中的一种状态，并且可以通过特定的方法在不同状态之间转换。这6种状态分别是:</p>
+<ul>
+<li><strong>新建</strong>(New)：创建后尚未启动的线程处于这种状态。</li>
+<li><strong>运行</strong>(Runnable)：包括操作系统线程状态中的<strong>Running</strong>和<strong>Ready</strong>，也就是处于此状态的线程有可能正在执行，也有可能正在等待着操作系统为它分配执行时间。</li>
+<li><strong>无限期等待</strong>(Waiting):处于这种状态的线程不会被分配处理器执行时间，它们要等待被其他线程显式唤醒。以下方法会让线程陷入无限期的等待状态:</li>
+</ul>
+<blockquote>
+<ul>
+<li>没有设置Timeout参数的Object:.wait()方法;</li>
+<li>没有设置Timeout参数的Thread:join()方法;</li>
+<li>mLockSupport::park(方法。</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>限期等待</strong>(Timed Waiting):处于这种状态的线程也不会被分配处理器执行时间，不过无须等待被其他线程显式唤醒，在一定时间之后它们会由系统自动唤醒。以下方法会让线程进入限期等待状态:</li>
+</ul>
+<blockquote>
+<ul>
+<li>Thread::sleep()方法；</li>
+<li>设置了Timeout参数的Object::wait()方法;</li>
+<li>设置了Timeout参数的Thread:.join()方法;</li>
+<li>LockSupport::parkNanos()方法;</li>
+<li>LockSupport:parkUntil()方法</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p><strong>阻塞</strong>（Blocked):线程被阻塞了，“阻塞状态”与“等待状态”的区别是“阻塞状态”在等待着获取到一个排它锁，这个事件将在另外一个线程放弃这个锁的时候发生;而“等待状态”则是在等待一段时间，或者唤醒动作的发生。在程序等待进入同步区域的时候，线程将进入这种状态。</p>
+</li>
+<li>
+<p><strong>结束</strong>(Terminated):已终止线程的线程状态，线程已经结束执行
+上述6种状态在遇到特定事件发生的时候将会互相转换，它们的转换关系如图12-6所示。</p>
+<p><img src="https://img-blog.csdnimg.cn/36fa1d05646e439db425df72ff727301.png" alt="在这里插入图片描述"></p>
+</li>
+</ul>
+<h1 id="四java与协程">四、Java与协程</h1>
+<h2 id="41-内核线程的局限">4.1 内核线程的局限</h2>
+<blockquote>
+<p>  笔者可以通过一个具体场景来解释目前Java线程面临的困境。今天对Web应用的服务要求，不论是在请求数量上还是在复杂度上，与十多年前相比已不可同日而语，这一方面是源于业务量的增长，另一方面来自于为了应对业务复杂化而不断进行的服务细分。现代B/S系统中一次对外部业务请求的响应，往往需要分布在不同机器上的大量服务共同协作来实现，这种服务细分的架构在减少单个服务复杂度、增加复用性的同时，也不可避免地增加了服务的数量，缩短了留给每个服务的响应时间。这要求每一个服务都必须在极短的时间内完成计算，这样组合多个服务的总耗时才不会太长;也要求每一个服务提供者都要能同时处理数量更庞大的请求，这样才不会出现请求由于某个服务被阻塞而出现等待。
+  Java目前的并发编程机制就与上述架构趋势产生了一些矛盾，1:
+1的内核线程模型是如今Java虚拟机线程实现的主流选择，但是这种映射到操作系统上的线程天然的缺陷是切换、调度成本高昂，系统能容纳的线程数量也很有限。以前处理一个请求可以允许花费很长时间在单体应用中，具有这种线程切换的成本也是无伤大雅的，但现在在每个请求本身的执行时间变得很短、数量变得很多的前提下，用户线程切换的开销甚至可能会接近用于计算本身的开销，这就会造成严重的浪费。
+  传统的Java Web服务器的线程池的容量通常在几十个到两百之间，当程序员把数以百万计的请求往线程池里面灌时，系统即使能处理得过来，但其中的切换损耗也是相当可观的。现实的需求在迫使Java去研究新的解决方案，同大家又开始怀念以前绿色线程的种种好处，绿色线程已随着Classic虚拟机的消失而被尘封到历史之中，它还会有重现天日的一天吗?</p>
+</blockquote>
+<h2 id="42-协程的复苏">4.2 协程的复苏</h2>
+<p>  首先我们要理解一个问题：<strong>为什么内核线程调度切换起来成本要更高</strong>？
+  内核线程的调度成本主要来自于用户态与和核心态之间的状态转换，其开销主要包括<strong>响应中断、保护和恢复执行现场</strong>的成本
+  当发生中断，运行线程从线程A切换到线程B时，系统首先要把A的上下文数据保存好（包括方法调用过程中的各种局部变量和资源），然后再把寄存器、内存分页等恢复到B挂起时的状态
+  虽然对于用户线程来说，这种保护和恢复现场的开销也是必要的，但由于切换工作由程序自己决定，自然有各种缩减开销的方法
+  有一些古老的操作系统（譬如DOS〉是单人单工作业形式的，天生就不支持多线程，自然也不会有多个调用栈这样的基础设施。而早在那样的蛮荒时代，就已经出现了今天被称为<strong>栈纠缠</strong>(StackTwine)的、由用户自己模拟多线程、自己保护恢复现场的工作模式。其大致的原理是通过在内存里划出一片额外空间来模拟调用栈，只要其他“线程”中方法压栈、退栈时遵守规则，不破坏这片空间即可，这样多段代码执行时就会像相互缠绕着一样，非常形象。
+  到后来，操作系统开始提供多线程的支持，靠应用自己模拟多线程的做法自然是变少了许多，但也并没有完全消失，而是演化为用户线程继续存在。由于最初多数的用户线程是被设计成协同式调度(Cooperative Scheduling)的，所以它有了一个别名——“<strong>协程</strong>”(Coroutine)。又由于这时候的协程会完整地做调用栈的保护、恢复工作，所以今天也被称为“<strong>有栈协程</strong>”(Stackfull Coroutine)，起这样的名字是为了便于跟后来的“无栈协程”(Stackless Coroutine〉区分开。无栈协程不是本节的主角，不过还是可以简单提一下它的典型应用，即各种语言中的await、async、yield这类关键字。无栈协程本质上是一种有限状态机，状态保存在闭包里，自然比有栈协程恢复调用栈要轻量得多，但功能也相对更有限。
+  协程非常轻量级，但需要在应用层面实现的内容（调用栈、调度器等）非常多，并且也具备一些协同式调度固有的缺点</p>
+<h2 id="43-java的解决方案">4.3 Java的解决方案</h2>
+<p>  对于有栈协程，有一种特例实现名为纤程（Fiber)，这个词最早是来自微软公司，后来微软还推出过系统层面的纤程包来方便应用做现场保存、恢复和纤程调度。OpenJDK在2018年创建了Loom项目，这是Java用来应对本节开篇所列场景的官方解决方案，根据目前公开的信息，如无意外，日后该项目为Java语言引入的、与现在线程模型平行的新并发编程机制中应该也会采用“纤程”这个名字，不过这显然跟微软是没有任何关系的。
+  Loom项目背后的意图是重新提供对用户线程的支持，但与过去的绿色线程不同，这些新功能不是为了取代当前基于操作系统的线程实现，而是会有两个并发编程模型在Java虚拟机中并存，可以在程序中同时使用。新模型有意地保持了与目前线程模型相似的API设计，它们甚至可以拥有一个共同的基类，这样现有的代码就不需要为了使用纤程而进行过多改动，甚至不需要知道背后采用了哪个并发编程模型。Loom团队在JVMLS2018大会上公布了他们对Jetty基于纤程改造后的测试结果，同样在5000QPS的压力下，以容量为400的线程池的传统模式和每个请求配以一个纤程的新并发处理模式进行对比，前者的请求响应延迟在10000至20000毫秒之间，而后者的延迟普遍在200毫秒以下，具体结果如图12-8所示。
+在新并发模型下，一段使用纤程并发的代码会被分为两部分——<strong>执行过程</strong>(Continuation)和<strong>调度器</strong>(Scheduler）。执行过程主要用于维护执行现场，保护、恢复上下文状态，而调度器则负责编排所有要执行的代码的顺序。将调度程序与执行过程分离的好处是，用户可以选择自行控制其中的一个或者多个，而且Java中现有的调度器也可以被直接重用。事实上，Loom中默认的调度器就是原来已存在的用于任务分解的Fork/Join池（JDK 7中加入的ForkJoinPool)。</p>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='https://linzhouli.github.io/js/toc.js'></script>
+<link rel="stylesheet" href='https://linzhouli.github.io/css/toc.css' />
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://linzhouli.github.io/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+      
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Copyright © Linzhou Li. All rights reserved.</li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="https://linzhouli.github.io/js/github-style.js"></script>
+
+
+
+</html>
