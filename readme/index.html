@@ -231,6 +231,25 @@ Github：LinzhouLi(github.com)
 <script type="application/javascript" src='https://linzhouli.github.io/js/toc.js'></script>
 <link rel="stylesheet" href='https://linzhouli.github.io/css/toc.css' />
 
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='https://linzhouli.github.io/css/gitalk.css'>
+<script src='https://linzhouli.github.io/js/gitalk.min.js'></script>
+<script>
+  console.log(eval("location.pathname"))
+  const gitalk = new Gitalk({
+    clientID: 'cf16ba56bb2bddd72df9',
+    clientSecret: '4d2f462a661834831e528b3ee5d92ce462d5a447',
+    repo: 'LinzhouLi.github.io',
+    owner: 'LinzhouLi',
+    admin: ['LinzhouLi'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
 
   <div class="footer container-xl width-full p-responsive">
   <div
